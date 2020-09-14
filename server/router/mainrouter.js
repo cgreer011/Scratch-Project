@@ -21,6 +21,7 @@ router.post('/addURL', maincontroller.saveUrl, maincontroller.pingUrl, maincontr
     res.status(200).send("URL successfully added")
 });
 
+
 /*4) api= /interval
 time will be req.body*/
 //put request (to update interval)
@@ -29,6 +30,7 @@ time will be req.body*/
 router.put('/interval', maincontroller.updateInterval, maincontroller.pingUrlInterval, (req, res) => {
     res.status(200).send("Interval successfully changed")
 });
+
 
 /*5) based on user clicking on button in front end, will check current status code
 api= /checknow - will be invoked on a button click
