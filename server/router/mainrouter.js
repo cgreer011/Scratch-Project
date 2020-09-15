@@ -37,7 +37,7 @@ router.post('/addURL',
 
 
 /*5) based on user clicking on button in front end, will check current status code
-=======
+
 
 // post request
 // storeUrl - store URL in database, store default interval in database
