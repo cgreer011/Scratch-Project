@@ -64,8 +64,6 @@ authcontroller.checkPw = (req, res, next) => {
 };
 
 authcontroller.saveUser = (req, res, next) => {
-  if (res.locals.exist) return next();
-
   let username = req.body.username;
   let password = req.body.password;
   let phoneNumber = req.body.phoneNumber;
